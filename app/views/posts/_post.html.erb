@@ -1,8 +1,10 @@
 <div class="post-header">
   <div class="left-header">
+   <% if user_signed_in? %>
     <div class="header-button">
-      <a href="#">自チームのチャット画面へ</a>
+    <%= link_to "#{current_user.name}のルーム", "#" %>
     </div>
+   <%end%>
   </div>
   <div class="right-header">
     <div class="header-button">

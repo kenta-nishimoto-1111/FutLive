@@ -1,11 +1,18 @@
 <div class="side-bar-header">
    <div class="header-name">
-     <a href="#">FutLive</a>
+      <%= link_to "FutLive", root_path %>
    </div>
-   <div class="create-room">
-     <a href="#">ログイン/新規登録</a>
-   </div>
+      <% if user_signed_in? %>
+        <div class="create-room">
+          <%= link_to 'ログアウト', destroy_user_session_path,  method: :delete%>
+        </div>
+     <% else %>
+        <div class="create-room">
+           <%= link_to "ログイン/新規登録", new_user_session_path %>
+        </div>
+      <% end %>
 </div>
+
 
 <div class="rooms">
   <div class="room">
