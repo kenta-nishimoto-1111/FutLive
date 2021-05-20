@@ -1,9 +1,9 @@
 <div class='account-page' id='account-page'>
   <div class='account-page__inner clearfix'>
     <div class='account-page__inner--left account-page__header'>
-      <h2>Log in</h2>
+      <h2>ログイン</h2>
       <h5>登録しているユーザーでログイン</h5>
-      <%= render "devise/shared/links"%>
+        <%= link_to "新規登録", new_registration_path(resource_name), class: 'btn'%>
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: resource, as: resource_name, url: session_path(resource_name), local: true do |f|%>
