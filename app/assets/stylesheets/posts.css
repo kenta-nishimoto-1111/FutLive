@@ -23,13 +23,13 @@
 }
 
 .header-name a{
-  font-size: 16px;
+  font-size: 20px;
   color: #FAFAFA;
   text-decoration: none;
 }
 
 .create-room a {
-  font-size: 10px;
+  font-size: 14px;
   border: 1px solid lightblue;
   padding: 14px;
   color: deepskyblue;
@@ -70,16 +70,82 @@
   background-color: #3f3f3f;
   border-bottom: 1px solid #595959;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid lightblue;
+  color: deepskyblue;
+  padding: 20px;
 }
 
 .posts {
   background-color: #1a1d21;
   height: calc(100vh - 190px);
   padding: 46px 40px 0;
+  overflow: scroll;
 }
+
+.message {
+  margin: 10px 0 0 0;
+  border: 1px solid #999;
+  padding: 20px;
+
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user {
+  color: #999;
+  font-size: 16px;
+}
+
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 
 .form {
   background-color: #595959;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-input {
+  background-color: white;
+  width: 100%;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
 }
