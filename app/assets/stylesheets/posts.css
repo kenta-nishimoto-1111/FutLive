@@ -3,25 +3,61 @@
   height: 100vh;
 }
 
-
+/* ========ここからサイドバー=========== */
 
 .side-bar {
   background-color: #333333;
   width: 300px;
-  padding: 0 20px;
 }
+
+/* ========ここからサイドバーのヘッダー=========== */
+
 
 .side-bar-header {
   height: 100px;
+  padding: 0 20px;
   background-color: #595959;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* ========ここからサイドバーのルーム=========== */
 
 .rooms {
   background-color: #333333;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* ========ここから投稿側=========== */
 
 
 .post {
