@@ -13,38 +13,14 @@
   </div>
 </div>
 
-<div class="posts">
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Tom
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        何月何日サッカーします
-      </div>
-    </div>
-  </div>
-
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Rinta
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        何月何日〇〇の会場空いてます！
-      </div>
-    </div>
-  </div>
+<div class="post-index">
+    <%= render partial: 'posts', collection: @posts %>
 </div>
 
 <div class="form">
   <div class="form-input">
-    <%# <input class="form-message"> %>
-    <a href="#" , class="form-message">情報を投稿する</a>
-
+    <div class="form-message">
+    <%= link_to "情報を投稿する", new_post_path %>
+      </div>
   </div>
 </div>
