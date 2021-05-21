@@ -1,0 +1,31 @@
+<div class='account-page' id='account-page'>
+  <div class='account-page__inner clearfix'>
+    <div class='account-page__inner--left account-page__header'>
+      <h2>情報を投稿する</h2>
+    </div>
+    <div class='account-page__inner--right user-form'>
+    <%= form_with(model: @post, local: true) do |form| %>
+        <div class='field'>
+          <div class='field-label'>
+           <%= form.text_field :month, placeholder: "開催する月" %>
+          </div>
+        <div class='field'>
+          <div class='field-label'>
+           <%= form.text_field :day, placeholder: "開催する日付" %>
+          </div>
+        <div class='field'>
+          <div class='field-label'>
+           <%= form.text_area :access, placeholder: "開催する場所" %>
+          </div>
+        <div class='field'>
+          <div class='field-label'>
+           <%= form.text_area :post, placeholder: "備考欄" %>
+          </div>
+          <div class='actions'>
+            <%= form.submit "送信", class: 'btn'%>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

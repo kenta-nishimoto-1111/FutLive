@@ -86,11 +86,14 @@
   padding: 20px;
 }
 
+.post-index{
+  height: calc(100vh - 190px);
+  overflow: scroll;
+}
+
 .posts {
   background-color: #1a1d21;
-  height: calc(100vh - 190px);
-  padding: 46px 40px 0;
-  overflow: scroll;
+  padding: 30px 20px 0px 20px;
 }
 
 .message {
@@ -105,7 +108,7 @@
 }
 
 .message-user {
-  color: #999;
+  color: white;
   font-size: 16px;
 }
 
@@ -145,3 +148,6 @@
   margin-top: 15px;
 }
 
+.message-date{
+  color:white;
+}
