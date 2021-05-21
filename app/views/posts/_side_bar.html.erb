@@ -13,16 +13,14 @@
       <% end %>
 </div>
 
-
+<% if user_signed_in? %>
 <div class="rooms">
+ <% @user.where.not(id: current_user.id).each do |user| %>
   <div class="room">
     <div class="room-name">
-      <a href="#">チームA</a>
+     <%= link_to "チーム　#{user.name}", root_path %>
     </div>
   </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">チームB</a>
-    </div>
-  </div>
+ <% end %>
 </div>
+<% end %>
