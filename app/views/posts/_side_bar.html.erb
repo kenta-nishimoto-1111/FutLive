@@ -15,10 +15,10 @@
 
 <% if user_signed_in? %>
 <div class="rooms">
- <% @user.where.not(id: current_user.id).each do |user| %>
+ <% @user.where.not(id: current_user.id).each do |f| %>
   <div class="room">
     <div class="room-name">
-     <%= link_to "チーム　#{user.name}", root_path %>
+     <%= link_to "チーム　#{f.name}", post_messages_path(f.id) %>
     </div>
   </div>
  <% end %>

@@ -151,3 +151,25 @@
 .message-date{
   color:white;
 }
+
+.form-inpu {
+  background-color: white;
+  width: 100%;
+}
+
+.form-messag {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submi {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
